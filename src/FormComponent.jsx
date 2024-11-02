@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 
-export function FormComponent( ) {
+export function FormComponent( onSubmit) {
     
     const [newItem, setNewItem] = useState("");
     
@@ -10,9 +10,10 @@ export function FormComponent( ) {
             return 
         }
 
-        //props.onSubmit(newItem);
+        // eslint-disable-next-line react/prop-types
+        onSubmit(newItem);
 
-        addTodo(newItem);
+        //addTodo(newItem);
 
         setNewItem("");
     }
