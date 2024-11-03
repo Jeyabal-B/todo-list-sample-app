@@ -6,8 +6,9 @@ export function TodoList ({todos, toggleTodo, deleteTodo}) {
         {todos.length === 0 && ""}
         {todos.map(todo => {
           return (
-            <TodoItem id={todo.id} completed={todo.completed} 
-            title={todo.title} key={todo.id}
+            <TodoItem 
+            {...todo}
+            key={todo.id}
             toggleTodo={toggleTodo}
             deleteTodo={deleteTodo} />
           )

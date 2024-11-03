@@ -1,19 +1,14 @@
 import { useState } from "react"; 
 
-export function FormComponent( onSubmit) {
+export function FormComponent( {onSubmit} ) {
     
     const [newItem, setNewItem] = useState("");
     
     function handleSubmit(e){
         e.preventDefault(); //prevents page from refreshing
-        if(newItem === "" ){
-            return 
-        }
+        if(newItem === "" ) return
 
-        // eslint-disable-next-line react/prop-types
         onSubmit(newItem);
-
-        //addTodo(newItem);
 
         setNewItem("");
     }
