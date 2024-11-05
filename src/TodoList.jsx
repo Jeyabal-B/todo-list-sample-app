@@ -16,3 +16,6 @@ export function TodoList ({todos, toggleTodo, deleteTodo}) {
       </ul>
     )
 }
+
+//The todo list uses the todo item compoent internally
+//Good example for componentization 

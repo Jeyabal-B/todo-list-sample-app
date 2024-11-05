@@ -53,3 +53,6 @@ function App() {
 }
 
 export default App;
+
+//This is where everything is orchestrated
+//This app method is just invoked from the index html which is the anchor point

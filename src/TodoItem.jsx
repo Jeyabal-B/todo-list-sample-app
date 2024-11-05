@@ -17,3 +17,7 @@ export function TodoItem({ completed, id, title, toggleTodo, deleteTodo}) {
         </li>
     )
 }
+
+//Last level component for this react app
+//The todo items are added one by one and stored in local storage
+//This keeps the items even if you refresh the page, as long as the server is running

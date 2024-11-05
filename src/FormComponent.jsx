@@ -28,3 +28,7 @@ export function FormComponent( {onSubmit} ) {
     </form>
     )
 }
+
+//This file has the main form as a component in react
+//Components will be in jsx files
+//Splitting multiple sections into components
